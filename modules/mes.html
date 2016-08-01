@@ -1,0 +1,38 @@
+<script type="text/javascript" >
+$(document).ready(function()
+{
+$("#mesLink").click(function()
+{
+$("#mesContainer").fadeToggle(300);
+$("#mes_count").fadeOut("slow");
+return false;
+});
+//Document Click
+$(document).click(function()
+{
+$("#mesContainer").hide();
+});
+//Popup Click
+$("#mesContainer").click(function()
+{
+return false
+});
+
+});
+</script>
+
+<ul id="nav">
+<li id="notification_li">
+<span id="mes_count">5</span>
+<a href="#"  id="mesLink"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+<div id="mesContainer">
+<div id="mesTitle">Notifications</div>
+<div id="mesBody" class="notifications">
+</div>
+<div id="mesFooter"><a href="#">See All</a></div>
+</div>
+
+</li>
+
+</ul>
+
